@@ -2,6 +2,22 @@
 layout: default
 title: Homepage
 ---
-<section class="padded">
-    <h1>Welcome to your homepage!</h1>
+<section class="padded grid">
+    <div class="col-12 text-center">
+        <h1>Welcome to your homepage!</h1>
+    </div>
+
+    {% for post in site.posts %}
+
+        <div class="col-4 padded-2">
+            <div class="bg-image padded-2 square" style="background-image: url('{{post.dog_image}}');"></div>
+            <div class="padded-2">
+                <h3> {{ post.title }} </h3>
+                <p> I'm a {{ post.Size }} {{ post.Gender }} rescue Dog </p>
+                <p> {{ post.description }} </p>
+            </div> 
+        </div>
+
+    {% endfor %}
+
 </section>

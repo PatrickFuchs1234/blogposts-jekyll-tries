@@ -2,14 +2,34 @@
 layout: default
 ---
 
-<section class="padded-2 bg-image vh50 grid">
-    <div class="col-12-center">
-        <h1> Something to Read </h1>
+<section class="grid">
+
+    <div class="col-9 padded-2">
+
+        <section class="padded-2 grid">
+            <div class="col-4 padded">
+                <h1> Something to Read about {{ page.title }} </h1>
+                <p> {{ page.date | date_to_string }} </p>
+            </div>
+            <div class="col-8 bg-image vh50" style="background-image: url({{page.dog_image}});">
+            </div>
+        </section>
+        
+        {{content}}
+
     </div>
-</section>
 
-<section>
+    <div class="col-3 padded-2">
 
+        <h3> More of our Dogs </h3>
 
-    
+        {% for post in site.posts %}
+ 
+        <h4> {{ post.title }} </h4>
+        <p> Hello, i'm a {{post.Size}} rescue dog</p>
+ 
+        {% endfor %}
+
+    </div>
+
 </section>
