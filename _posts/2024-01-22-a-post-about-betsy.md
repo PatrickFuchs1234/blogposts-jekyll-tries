@@ -6,7 +6,7 @@ dog_image: /images/Annie.jpg
 Gender: female
 Size: rather Big
 Ticks: not good with other Dogs
-categoy: [Big Dogs, experiance needet]
+category: [Big Dogs, experiance needet]
 ---
 
 ## Heading

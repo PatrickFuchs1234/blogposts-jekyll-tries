@@ -4,18 +4,23 @@ layout: default
 
 <section class="grid">
 
-    <div class="col-9 padded-2">
+    <div class="col-9 padded-2 grid">
+        <div class="col-6 padded-2">
+            <h1> Something to Read about {{ page.title }} </h1>
+            <p> {{ page.date | date_to_string }} </p>
+            {% for item in page.category %}
+            <span class="tag"> {{item}} </span>
+            {% endfor %}
 
-        <section class="padded-2 grid">
-            <div class="col-4 padded">
-                <h1> Something to Read about {{ page.title }} </h1>
-                <p> {{ page.date | date_to_string }} </p>
-            </div>
-            <div class="col-8 bg-image vh50" style="background-image: url({{page.dog_image}});">
-            </div>
-        </section>
+        </div>
         
-        {{content}}
+        <div class="col-6 padded-2">
+            <div class="bg-image vh40" style="background-image: url({{page.dog_image}}); background-position: 50% 30%;"></div>
+        </div>
+
+        <div class="padded-2">
+            {{content}}
+        </div>
 
     </div>
 
@@ -24,10 +29,12 @@ layout: default
         <h3> More of our Dogs </h3>
 
         {% for post in site.posts %}
- 
-        <h4> {{ post.title }} </h4>
-        <p> Hello, i'm a {{post.Size}} rescue dog</p>
- 
+        
+        <div class="margin-b padding-b">
+            <h4> {{ post.title }} </h4>
+            <p> Hello, i'm a {{post.Size}} rescue dog</p>
+            <a href="{{post.url}}">Read more about {{title}}...</a>
+        </div>
         {% endfor %}
 
     </div>

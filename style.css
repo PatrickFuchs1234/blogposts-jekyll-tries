@@ -127,6 +127,15 @@ hr{
     color: var(--featured);
 }
 
+.tag {
+    border: 1px solid;
+    color: grey;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.25rem;
+ }
+
 /* Background & Image Styles  */
 .bg-dark { 
     background-color: var(--dark); 
@@ -145,6 +154,8 @@ hr{
 
 /* Backgroundsize */
 /* universal heights */
+.vh30    {min-height: 30vh; }
+.vh40    {min-height: 40vh; }
 .vh50    {min-height: 50vh; }
 .vh60    {min-height: 60vh; }
 .vh70    {min-height: 70vh; }
