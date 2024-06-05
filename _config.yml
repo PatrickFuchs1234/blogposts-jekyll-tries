@@ -2,3 +2,5 @@ collections:
   posts:
     output: true
     permalink: /posts/:year/:title
+  archives:
+    output: true

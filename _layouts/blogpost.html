@@ -8,7 +8,7 @@ layout: default
         <div class="col-6 padded-2">
             <h1> Something to Read about {{ page.title }} </h1>
             <p> {{ page.date | date_to_string }} </p>
-            {% for item in page.category %}
+            {% for item in page.categories %}
             <span class="tag"> {{item}} </span>
             {% endfor %}
 

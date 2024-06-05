@@ -1,0 +1,12 @@
+<div class="col-4 padded-2">
+    <div class="bg-image padded-2 square" style="background-image: url('{{post.dog_image}}');"></div>
+    <div class="padded-2">
+        {% for item in post.categories %}
+            <span class="tag"> {{ item }} </span>
+        {% endfor %}
+        <h3 class="margin-t-1"> {{ post.title }} </h3>
+        <p> I'm a {{ post.Size }} {{ post.Gender }} rescue Dog </p>
+        <p> {{ post.description }} </p>
+        <a href="{{post.url}}">Read more about {{title}}...</a>
+    </div> 
+</div>

@@ -6,7 +6,7 @@ dog_image: /images/Bailey.jpg
 Gender: male
 Size: rather Small
 Ticks: sometimes has accidents
-category: [Medium Dogs, no experiance needet]
+categories: ['Medium Dogs', 'no experience needed']
 ---
 
 ## Heading

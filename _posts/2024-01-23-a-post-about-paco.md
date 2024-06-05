@@ -6,7 +6,7 @@ dog_image: /images/Alex.jpg
 Gender: male
 Size: rather Small
 Ticks: chewing a lot - getting teeth
-category: [Medium Dogs, less experiance needet]
+categories: ['Medium Dogs', 'little experience needed']
 ---
 
 ## Heading
