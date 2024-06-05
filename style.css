@@ -80,17 +80,17 @@ img { max-width: 100%; }
 .text-center  { text-align: center; }
 
 body {
-font-family: "Arial", sans-serif;  /* Add your font here */ 
+    font-family: "Arial", sans-serif;  /* Add your font here */ 
 }
 
 h2, h3, h4, h5, h6 {
-line-height: 1.1;
-margin-bottom: 1.2rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
 }
 
 p {
-line-height: 1.2; 
-margin-bottom: 1rem;
+    line-height: 1.2; 
+    margin-bottom: 1rem;
 }
 
 h2:last-child, 
@@ -102,20 +102,45 @@ p:last-child {
     margin-bottom: 0;
 }
 
+header a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    margin-right: 1rem;
+}
+header a:hover{
+    color: var(--featured);
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid var(--dark);
+}
+
+.social-links a{
+    color: var(--dark);
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.social-links a:hover{
+    color: var(--featured);
+}
+
 /* Background & Image Styles  */
 .bg-dark { 
-background-color: var(--dark); 
-color: white;
+    background-color: var(--dark); 
+    color: white;
 }
 
 .bg-featured { background-color: var(--featured); }
 .bg-light { background-color: var(--light); }
 
 .bg-image {
-background-color: grey; /* Set a fall-back color while images are loading */ 
-background-size: cover;
-background-position: center; 
-background-repeat: no-repeat;
+    background-color: grey; /* Set a fall-back color while images are loading */ 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */

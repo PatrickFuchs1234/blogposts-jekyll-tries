@@ -2,29 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <title>{{page.title}}</title>
+    {% include head.html %}
 </head>
 
 <body>
 
-    <header class="grid padded">
-        <div class="col-4">
-            <h2> LOGO </h2>
-        </div>
-
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/our-dogs.html">Our Dogs</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
-    </header>
+    {% include site-header.html %}
 
     {{content}}
+
+    {% include site-footer.html %}
 </body>
 
 </html>
