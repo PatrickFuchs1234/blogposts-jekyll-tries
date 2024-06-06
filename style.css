@@ -112,6 +112,36 @@ header a:hover{
     color: var(--featured);
 }
 
+/* dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-title {
+    /* padding: 0.25rem 0.5rem; */
+    margin-right: 1rem;
+    display: inline-block;
+}
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.5rem 0;
+    display: none;
+    background-color: white;
+    z-index: 2;
+    text-align: left;
+    min-width: 8rem;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid lightgray;
+}
+
 hr{
     border: none;
     border-bottom: 1px solid var(--dark);

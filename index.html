@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Homepage
+category: sweets
 ---
 <section class="padded grid">
     <div class="col-12 text-center">
@@ -19,6 +20,16 @@ title: Homepage
             </div> 
         </div>
 
+    {% endfor %}
+
+</section>
+
+<section class="padded">
+    <h1>Recipes</h1>
+
+    {% assign relevant-recipes = site.recipes | where_exp:"recipe", "recipe.categories contains page.category" %}
+    {% for recipe in relevant-recipes %}
+        <a href="{{ recipe.url }}"> {{ recipe.title }} </a>
     {% endfor %}
 
 </section>
