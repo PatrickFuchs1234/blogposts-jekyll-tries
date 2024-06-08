@@ -11,7 +11,7 @@ img { max-width: 100%; }
 
 /* setting variables for our colors bsp: var(--dark) */
 :root {
-    --dark: rgb(60,60,65);
+    --dark: #112c36;
     --featured: teal;
     --light: rgb(245,245,245);
 }
